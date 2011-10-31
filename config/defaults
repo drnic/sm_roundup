@@ -1,0 +1,5 @@
+version=0.0.5
+base_url=https://github.com/bmizerany/roundup/tarball/master
+archive_format=tar.gz
+website_url=http://itsbonus.heroku.com/p/2010-11-01-roundup
+documentation_url=http://bmizerany.github.com/roundup/
