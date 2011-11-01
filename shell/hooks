@@ -1,0 +1,27 @@
+#!/bin/sh
+
+roundup_fetch()
+{
+  curl -L https://github.com/bmizerany/roundup/tarball/master
+}
+
+roundup_extract()
+{
+  tar xvzf -
+}
+
+roundup_configure()
+{
+  cd bmizerany-roundup-*
+  ./configure --prefix=$WHAT_SM_PATH
+}
+
+roundup_build()
+{
+  make
+}
+
+roundup_install()
+{
+  make install
+}
