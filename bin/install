@@ -2,6 +2,6 @@
 
 curl -L https://github.com/bmizerany/roundup/tarball/master | tar xvzf -
 cd bmizerany-roundup-*
-./configure # see --help for options
+./configure --prefix=$WHAT_SM_PATH
 make
 make install # you may need sudo
