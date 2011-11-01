@@ -16,3 +16,10 @@ From git clone:
     sm ext install roundup .
     sm roundup install
 
+## Usage
+
+Let's run the roundup tests in the roundup project itself!
+
+    git clone https://github.com/bmizerany/roundup
+    cd roundup
+    roundup
