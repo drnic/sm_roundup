@@ -14,7 +14,7 @@ roundup_extract()
 
 roundup_configure()
 {
-  cd ${source_path}
+  cd "${source_path}/${package_dir}"
   ./configure --prefix=${install_path}
 }
 
