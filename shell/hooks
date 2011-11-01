@@ -1,19 +1,21 @@
 #!/bin/sh
 
+# Hooks into __sm.package.gnu.install() parent function in SM's core/internal/package/functions
+
 roundup_fetch()
 {
-  curl -L https://github.com/bmizerany/roundup/tarball/master
+  fetch_uri "https://github.com/bmizerany/roundup/tarball/master" "${source_path}/${package_dir}"
 }
 
 roundup_extract()
 {
-  tar xvzf -
+  true
 }
 
 roundup_configure()
 {
-  cd bmizerany-roundup-*
-  ./configure --prefix=$WHAT_SM_PATH
+  cd ${source_path}
+  ./configure --prefix=${install_path}
 }
 
 roundup_build()
